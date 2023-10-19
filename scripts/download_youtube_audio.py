@@ -13,7 +13,7 @@ import logging.config
 # Add root project directory to path
 import sys
 from pathlib import Path
-sys.path.append((Path.cwd().parent.parent).as_posix())
+sys.path.append((Path(__file__).parent.parent.resolve()).as_posix())
 
 from youtube_music_metadata.utilities import (
     download_audio_with_metadata, 
