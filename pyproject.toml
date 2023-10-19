@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "youtube-music-metadata"
+version = "0.1.0"
+description = "Tool designed to download and attach metadata from Youtube videos adapted for music videos."
+authors = ["SBroaddus220 <steven.broaddus220@gmail.com>"]
+license = "GPL-3.0-only"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+yt-dlp = "^2023.7.6"
+requests = "^2.31.0"
+
+
+[tool.poetry.scripts]
+download_youtube_audio = "scripts.download_youtube_audio:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
